@@ -1,5 +1,6 @@
 package toy.market.domain.category.repository;
 
+import org.springframework.stereotype.Component;
 import toy.market.domain.category.Category;
 
 import java.util.ArrayList;
@@ -7,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+@Component
 public class MemoryCategoryRepository implements CategoryRepository {
     Map<Long, Category> store = new ConcurrentHashMap();
     private static Long SEQ = 1L;

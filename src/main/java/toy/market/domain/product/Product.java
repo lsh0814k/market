@@ -1,11 +1,11 @@
 package toy.market.domain.product;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.Data;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
-@Getter @RequiredArgsConstructor
+@Data @Component
 public class Product {
     private Long productId;
     private String productName;
@@ -14,4 +14,12 @@ public class Product {
     private Long operId;
     private LocalDateTime createTime;
 
+    public Product() {}
+
+    public Product(Long productId, String productName, String categoryId, Integer ageLimit) {
+        this.productId = productId;
+        this.productName = productName;
+        this.categoryId = categoryId;
+        this.ageLimit = ageLimit;
+    }
 }
