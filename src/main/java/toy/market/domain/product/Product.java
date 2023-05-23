@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
-@Data @Component
+@Data
 public class Product {
     private Long productId;
     private String productName;

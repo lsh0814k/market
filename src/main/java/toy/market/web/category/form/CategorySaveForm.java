@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-@Data @Component
+@Data
 public class CategorySaveForm {
     private Long categoryId;
     @NotBlank

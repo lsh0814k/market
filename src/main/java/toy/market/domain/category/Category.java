@@ -4,7 +4,7 @@ package toy.market.domain.category;
 import lombok.Data;
 import org.springframework.stereotype.Component;
 
-@Data @Component
+@Data
 public class Category {
     private Long categoryId;
     private String categoryName;
